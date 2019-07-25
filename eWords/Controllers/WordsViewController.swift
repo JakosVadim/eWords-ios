@@ -24,7 +24,6 @@ class WordsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.title = deckForSegue!
         guard let currentUser = Auth.auth().currentUser else { return }
         user = UserData(user: currentUser)
         ref = Database.database().reference(withPath: "users").child(String(user.uid)).child("decks").child(String(deckForSegue!)).child("words")

@@ -34,11 +34,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             }
         }
         
-        
-        // MARK: Keyboard
-        /* NotificationCenter.default.addObserver(self, selector: #selector(kbDidShow), name: UIResponder.keyboardDidShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(kbDidHide), name: UIResponder.keyboardDidHideNotification, object: nil) */
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,17 +54,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         return false
     }
-    // MARK: keyboard2
-   /* @objc func kbDidShow(notification: Notification) {
-        guard let userInfo = notification.userInfo else { return }
-        let kbFrameSize = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        (self.view as! UIScrollView).contentSize = CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height + kbFrameSize.height)
-        (self.view as! UIScrollView).scrollIndicatorInsets = UIEdgeInsets(top: 0, left: 0, bottom: kbFrameSize.height, right: 0)
-    }
-    
-    @objc func kbDidHide() {
-        (self.view as! UIScrollView).contentSize = CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height)
-    } */
     
     func hexStringToUIColor (hex:String) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()

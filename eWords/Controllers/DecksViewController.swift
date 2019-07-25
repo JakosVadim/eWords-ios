@@ -72,7 +72,6 @@ class DecksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.textLabel?.textColor = UIColor.white
         if indexPath.row < decks.count {
             let deck = decks[indexPath.row]
-            //cell.backgroundColor = UIColor(red: 97.0/255, green: 189.0/255, blue: 79.0/255, alpha: 1.0)
             cell.backgroundColor = #colorLiteral(red: 0.2509803922, green: 0.5647058824, blue: 0.8117647059, alpha: 1)
             let deckTitle = deck.title
             cell.textLabel?.text = deckTitle
@@ -106,16 +105,10 @@ class DecksViewController: UIViewController, UITableViewDelegate, UITableViewDat
             delRef.child(deck.title).observeSingleEvent(of: .value, with: { (snapshot) in
                 let delUid = snapshot.childSnapshot(forPath: "userId").value
                 
-//                guard ((delUid as? String) != self.user.uid) else {
-//                    print("User: \(self.user.uid) Deck: \(delUid!)")
-//                    delRef.child(deck.title).removeValue()
-//                    return
-//                }
                 if ((delUid as? String) == self.user.uid) {
                     delRef.child(deck.title).removeValue()
                 }
             })
-           // deck.otherRef?.removeValue()
         }
     }
     
@@ -174,7 +167,6 @@ class DecksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         } catch {
             print(error.localizedDescription)
         }
-//        navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
 }

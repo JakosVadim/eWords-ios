@@ -25,7 +25,6 @@ class OtherWordsViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.title = deckForSegue!
         guard let currentUser = Auth.auth().currentUser else { return }
         user = UserData(user: currentUser)
         
@@ -73,22 +72,6 @@ class OtherWordsViewController: UIViewController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return words.count
     }
-    
-//    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-//        return true
-//    }
-//
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
-//            let word = words[indexPath.row]
-//            word.ref?.removeValue()
-//        }
-//    }
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        self.performSegue(withIdentifier: "showSegue", sender: deckForSegue)
-//        return
-//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let showViewController = segue.destination as? ShowViewController, let title = sender as? String else { return }

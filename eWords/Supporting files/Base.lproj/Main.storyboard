@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="eWords" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Dfd-yC-nTE">
+                                <rect key="frame" x="40" y="107" width="240" height="374.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="SNe-WE-6qd">
+                                        <rect key="frame" x="23.5" y="0.0" width="193.5" height="114.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eWords" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yX-O6-61G">
+                                                <rect key="frame" x="15.5" y="0.0" width="162" height="55.5"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="50"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Некорректные данные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-Ci-dIx">
+                                                <rect key="frame" x="0.0" y="95.5" width="193.5" height="19"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.26666666666666666" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gJ2-l3-4yS">
+                                        <rect key="frame" x="0.0" y="164.5" width="240" height="70"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v6s-jG-bty">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfJ-sy-FIi">
+                                                <rect key="frame" x="0.0" y="40" width="240" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tfJ-sy-FIi" secondAttribute="trailing" id="5nB-FB-BJ4"/>
+                                            <constraint firstItem="v6s-jG-bty" firstAttribute="leading" secondItem="gJ2-l3-4yS" secondAttribute="leading" id="66b-fh-88Q"/>
+                                            <constraint firstItem="tfJ-sy-FIi" firstAttribute="leading" secondItem="gJ2-l3-4yS" secondAttribute="leading" id="MnV-yq-4r2"/>
+                                            <constraint firstAttribute="trailing" secondItem="v6s-jG-bty" secondAttribute="trailing" id="ZvG-ML-UCv"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HsS-Y1-ijg">
+                                        <rect key="frame" x="40" y="284.5" width="160" height="90"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ne-ix-8eo">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="38"/>
+                                                <color key="backgroundColor" red="0.0078431372549019607" green="0.7803921568627451" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="23"/>
+                                                <state key="normal" title="войти">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hTX-Gh-Am5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbd-ve-kSO">
+                                                <rect key="frame" x="0.0" y="58" width="160" height="32"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="18"/>
+                                                <state key="normal" title="Регистрация">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="registerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vc4-fY-xk6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="2Ne-ix-8eo" secondAttribute="trailing" id="E5r-5g-Af0"/>
+                                            <constraint firstItem="Kbd-ve-kSO" firstAttribute="leading" secondItem="HsS-Y1-ijg" secondAttribute="leading" id="ZLX-tB-JeA"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kbd-ve-kSO" secondAttribute="trailing" id="lw4-cn-nnV"/>
+                                            <constraint firstItem="2Ne-ix-8eo" firstAttribute="leading" secondItem="HsS-Y1-ijg" secondAttribute="leading" id="nmY-YU-zPJ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HsS-Y1-ijg" secondAttribute="trailing" constant="40" id="IMQ-eA-2Mk"/>
+                                    <constraint firstItem="HsS-Y1-ijg" firstAttribute="leading" secondItem="Dfd-yC-nTE" secondAttribute="leading" constant="40" id="MPC-3I-mdn"/>
+                                    <constraint firstAttribute="trailing" secondItem="gJ2-l3-4yS" secondAttribute="trailing" id="SBQ-9e-J0z"/>
+                                    <constraint firstItem="gJ2-l3-4yS" firstAttribute="leading" secondItem="Dfd-yC-nTE" secondAttribute="leading" id="dbQ-BP-VGr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1529411765" green="0.47450980390000003" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dfd-yC-nTE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Mb4-u8-1ST"/>
+                            <constraint firstItem="Dfd-yC-nTE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QYJ-G6-0cw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dfd-yC-nTE" secondAttribute="trailing" constant="40" id="fzb-aj-azc"/>
+                            <constraint firstItem="Dfd-yC-nTE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="zd8-EE-SGJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="v6s-jG-bty" id="jM2-5z-A9b"/>
+                        <outlet property="passwordTextField" destination="tfJ-sy-FIi" id="baF-om-FZf"/>
+                        <outlet property="warnLabel" destination="Ifv-Ci-dIx" id="PIc-QR-J17"/>
+                        <segue destination="qfd-j1-egT" kind="show" identifier="decksSegue" id="djJ-Ui-2uA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Колоды-->
+        <scene sceneID="Z72-Mo-dX3">
+            <objects>
+                <viewController id="AwF-Sf-jxw" customClass="DecksViewController" customModule="eWords" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="db0-ZP-9DD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aQW-Cd-2hH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.47450980390000003" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="z4w-cL-cmk">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z4w-cL-cmk" id="S1j-IU-xxL">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="AwF-Sf-jxw" id="4Do-gO-LOD"/>
+                                    <outlet property="delegate" destination="AwF-Sf-jxw" id="0eH-Lp-O34"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aQW-Cd-2hH" firstAttribute="bottom" secondItem="r0N-tC-eqt" secondAttribute="bottom" id="0iV-We-Iuj"/>
+                            <constraint firstItem="aQW-Cd-2hH" firstAttribute="leading" secondItem="r0N-tC-eqt" secondAttribute="leading" id="BZd-bN-p4Y"/>
+                            <constraint firstItem="aQW-Cd-2hH" firstAttribute="top" secondItem="db0-ZP-9DD" secondAttribute="top" id="BjE-ld-aSp"/>
+                            <constraint firstItem="aQW-Cd-2hH" firstAttribute="trailing" secondItem="r0N-tC-eqt" secondAttribute="trailing" id="aH0-Li-5JJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r0N-tC-eqt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Колоды" id="txp-33-Y5i">
+                        <barButtonItem key="leftBarButtonItem" title="Выйти" id="NOx-vR-Drl">
+                            <connections>
+                                <action selector="signOutTapped:" destination="AwF-Sf-jxw" id="8af-2t-OdW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="O2c-UH-Qun">
+                            <connections>
+                                <action selector="addTapped:" destination="AwF-Sf-jxw" id="S30-74-rx1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="aQW-Cd-2hH" id="7mo-Ht-Ek3"/>
+                        <segue destination="J2r-JE-p9d" kind="show" identifier="wordsSegue" id="ZlX-3e-0kN"/>
+                        <segue destination="phj-70-IY8" kind="show" identifier="otherWordsSegue" id="Dhw-pG-Xal"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ep-Jk-nuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Слова-->
+        <scene sceneID="3bs-Xl-OVx">
+            <objects>
+                <viewController id="J2r-JE-p9d" customClass="WordsViewController" customModule="eWords" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ch-Fn-MLL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yPh-qY-gt1" userLabel="TableView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.47450980390000003" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="zAN-me-zZI">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zAN-me-zZI" id="28U-Ie-k6B">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="J2r-JE-p9d" id="3BJ-rr-OFW"/>
+                                    <outlet property="delegate" destination="J2r-JE-p9d" id="bHS-uv-y5T"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yPh-qY-gt1" firstAttribute="bottom" secondItem="pb8-yF-85f" secondAttribute="bottom" id="1h5-cG-XV7"/>
+                            <constraint firstItem="yPh-qY-gt1" firstAttribute="leading" secondItem="pb8-yF-85f" secondAttribute="leading" id="HpG-0a-544"/>
+                            <constraint firstItem="yPh-qY-gt1" firstAttribute="top" secondItem="9ch-Fn-MLL" secondAttribute="top" id="WvF-L4-5p9"/>
+                            <constraint firstItem="yPh-qY-gt1" firstAttribute="trailing" secondItem="pb8-yF-85f" secondAttribute="trailing" id="biw-jm-VOj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pb8-yF-85f"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Слова" id="Ye4-6D-h7L">
+                        <barButtonItem key="leftBarButtonItem" title="Колоды" id="qBb-XL-HiU">
+                            <connections>
+                                <action selector="decksTapped:" destination="J2r-JE-p9d" id="HZa-7S-xwP"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="kFA-6W-PAD">
+                            <connections>
+                                <action selector="addTapped:" destination="J2r-JE-p9d" id="pKJ-id-4Sm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="yPh-qY-gt1" id="v8u-3T-vD5"/>
+                        <segue destination="bo5-rO-eIK" kind="show" identifier="showSegue" id="B1x-dB-Zh6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SUQ-1v-d4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2505" y="134"/>
+        </scene>
+        <!--Слова-->
+        <scene sceneID="sfr-Gt-HvT">
+            <objects>
+                <viewController id="phj-70-IY8" customClass="OtherWordsViewController" customModule="eWords" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VrC-b1-Nxt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZuX-gN-AjQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.47450980390000003" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="bHG-SW-ca2">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bHG-SW-ca2" id="ewK-vH-LZC">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="phj-70-IY8" id="1zX-EK-1h6"/>
+                                    <outlet property="delegate" destination="phj-70-IY8" id="T9i-sO-rTT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZuX-gN-AjQ" firstAttribute="trailing" secondItem="rMB-RA-f8d" secondAttribute="trailing" id="ARi-3a-Jdd"/>
+                            <constraint firstItem="ZuX-gN-AjQ" firstAttribute="leading" secondItem="rMB-RA-f8d" secondAttribute="leading" id="QDE-kf-h3s"/>
+                            <constraint firstItem="ZuX-gN-AjQ" firstAttribute="top" secondItem="VrC-b1-Nxt" secondAttribute="top" id="WVT-N4-VtU"/>
+                            <constraint firstItem="ZuX-gN-AjQ" firstAttribute="bottom" secondItem="rMB-RA-f8d" secondAttribute="bottom" id="hlw-mN-K91"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rMB-RA-f8d"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Слова" id="i4p-Rz-j58">
+                        <barButtonItem key="leftBarButtonItem" title="Колоды" id="65V-3H-KyN">
+                            <connections>
+                                <action selector="decksTapped:" destination="phj-70-IY8" id="DWx-q0-en9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Добавить" id="1pl-r0-ljT">
+                            <connections>
+                                <action selector="addDeckTapped:" destination="phj-70-IY8" id="ZR8-HG-qum"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ZuX-gN-AjQ" id="N96-g1-cFz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMl-Y4-f9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2505" y="931"/>
+        </scene>
+        <!--Show View Controller-->
+        <scene sceneID="NlU-Aq-LFJ">
+            <objects>
+                <viewController id="bo5-rO-eIK" customClass="ShowViewController" customModule="eWords" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6hP-Wx-dr1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="FWg-Yy-s4s">
+                                <rect key="frame" x="40" y="119" width="240" height="394.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SiV-Hx-y0d">
+                                        <rect key="frame" x="39.5" y="0.0" width="161.5" height="130.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Слово" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yw-Cd-nQ4">
+                                                <rect key="frame" x="24.5" y="0.0" width="112" height="39"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Неверный ответ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tst-v7-OyI">
+                                                <rect key="frame" x="0.0" y="59" width="161.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="20"/>
+                                                <color key="textColor" red="1" green="0.2666666667" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перевод:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfI-wM-wfh">
+                                                <rect key="frame" x="22" y="101.5" width="117" height="29"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NDz-5O-lTg">
+                                        <rect key="frame" x="0.0" y="170.5" width="240" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Перевод" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VHh-my-g2c">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="VHh-my-g2c" secondAttribute="trailing" id="DOX-4Y-bx5"/>
+                                            <constraint firstItem="VHh-my-g2c" firstAttribute="leading" secondItem="NDz-5O-lTg" secondAttribute="leading" id="Fqd-xM-O1I"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nfJ-f1-wVG">
+                                        <rect key="frame" x="40" y="240.5" width="160" height="154"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82u-ea-6SS">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="38"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.19759573063380281" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="23"/>
+                                                <state key="normal" title="проверить">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="checkTapped:" destination="bo5-rO-eIK" eventType="touchUpInside" id="R8L-Nf-aoH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFC-Ka-g99">
+                                                <rect key="frame" x="0.0" y="58" width="160" height="38"/>
+                                                <color key="backgroundColor" red="0.0078431372550000003" green="0.78039215689999997" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="23"/>
+                                                <state key="normal" title="ответ">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="answerTapped:" destination="bo5-rO-eIK" eventType="touchUpInside" id="enz-Ce-wKI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDT-Lk-GNX">
+                                                <rect key="frame" x="0.0" y="116" width="160" height="38"/>
+                                                <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="23"/>
+                                                <state key="normal" title="Пропустить">
+                                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="nextTapped:" destination="bo5-rO-eIK" eventType="touchUpInside" id="pQH-xH-b7K"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="82u-ea-6SS" firstAttribute="leading" secondItem="nfJ-f1-wVG" secondAttribute="leading" id="8mJ-mD-u3V"/>
+                                            <constraint firstAttribute="trailing" secondItem="82u-ea-6SS" secondAttribute="trailing" id="KuF-q6-Apz"/>
+                                            <constraint firstItem="VFC-Ka-g99" firstAttribute="leading" secondItem="nfJ-f1-wVG" secondAttribute="leading" id="X2G-cC-V0s"/>
+                                            <constraint firstAttribute="trailing" secondItem="VFC-Ka-g99" secondAttribute="trailing" id="mnO-kj-YD6"/>
+                                            <constraint firstItem="xDT-Lk-GNX" firstAttribute="leading" secondItem="nfJ-f1-wVG" secondAttribute="leading" id="n7u-j0-HyR"/>
+                                            <constraint firstAttribute="trailing" secondItem="xDT-Lk-GNX" secondAttribute="trailing" id="wkT-Rm-BlS"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nfJ-f1-wVG" secondAttribute="trailing" constant="40" id="AwQ-gY-2ee"/>
+                                    <constraint firstItem="nfJ-f1-wVG" firstAttribute="leading" secondItem="FWg-Yy-s4s" secondAttribute="leading" constant="40" id="eGv-6d-dnt"/>
+                                    <constraint firstAttribute="trailing" secondItem="NDz-5O-lTg" secondAttribute="trailing" id="iYB-qi-sDU"/>
+                                    <constraint firstItem="NDz-5O-lTg" firstAttribute="leading" secondItem="FWg-Yy-s4s" secondAttribute="leading" id="ilv-48-dll"/>
+                                </constraints>
+                            </stackView>
+                            <navigationBar clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="swj-s5-j0R">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.70980392156862748" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Word" id="bzw-uw-6mp">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ItF-60-gCB">
+                                            <connections>
+                                                <action selector="backTapped:" destination="bo5-rO-eIK" id="nXc-bJ-wWV"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1529411765" green="0.47450980390000003" blue="0.74901960779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FWg-Yy-s4s" firstAttribute="centerY" secondItem="5HR-a6-q2Q" secondAttribute="centerY" id="6sk-eT-1s5"/>
+                            <constraint firstItem="5HR-a6-q2Q" firstAttribute="trailing" secondItem="FWg-Yy-s4s" secondAttribute="trailing" constant="40" id="Hgz-XN-VeR"/>
+                            <constraint firstItem="FWg-Yy-s4s" firstAttribute="leading" secondItem="5HR-a6-q2Q" secondAttribute="leading" constant="40" id="Sc4-UQ-Bum"/>
+                            <constraint firstItem="FWg-Yy-s4s" firstAttribute="centerX" secondItem="5HR-a6-q2Q" secondAttribute="centerX" id="ceJ-BC-Eta"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5HR-a6-q2Q"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="xDT-Lk-GNX" id="yPv-Ve-G0D"/>
+                        <outlet property="translationLabel" destination="SfI-wM-wfh" id="moQ-Hj-oO4"/>
+                        <outlet property="translationTextField" destination="VHh-my-g2c" id="rI2-B3-hQK"/>
+                        <outlet property="warnLabel" destination="tst-v7-OyI" id="FXi-5b-WXb"/>
+                        <outlet property="wordLabel" destination="3yw-Cd-nQ4" id="fR6-ZZ-czb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vug-Ie-Gcd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3341.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OPr-JG-sfl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qfd-j1-egT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tX5-4U-fH1">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AwF-Sf-jxw" kind="relationship" relationship="rootViewController" id="zQ0-q2-SW3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJO-oM-NXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
